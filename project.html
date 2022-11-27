@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      div.gallery {
+        border: 1px solid #ccc;
+      }
+      
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+      
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+      
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+      p{
+        font-size: 20px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 25%;
+      }
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      </style>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+      <div class="container">
+        <div class="project">
+          <h1>My Project</h1><br>
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="assets/os.png">
+                <img src="assets/os.png" alt="Cinque Terre" width="200" height="400">
+              </a>
+              <div class="desc">Pram OS
+                <br>
+                <p>Remastering sistem operasi pada Linux Ubuntu</p>
+              </div>
+            </div>
+          </div>         
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="assets/3d.png">
+                <img src="assets/3d.png" alt="Forest" width="600" height="400">
+              </a>
+              <div class="desc">Modelling 3D
+                <br>
+                <p>Membuat Modelling 3D menggunakan Fusion 360</p>
+              </div>
+            </div>
+          </div>         
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="assets/kw.jpg">
+                <img src="assets/kw.jpg" alt="Northern Lights" width="600" height="400">
+              </a>
+              <div class="desc">Kwitansi
+                <br>
+                <p>Membuat kwitansi dengan bahasa pemograman PHP</p>
+              </div>
+            </div>
+          </div>          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="assets/parkir.jpg">
+                <img src="assets/parkir.jpg" alt="Mountains" width="600" height="400">
+              </a>
+              <div class="desc">Smart Parking
+                <br>
+                <p>Membuat sistem parkir menggunakan arduino</p>
+              </div>
+            </div>
+          </div>         
+          <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+<div class="footer">
+  <p>Copyleft 2022 by Fery Kusuma</p>
+</div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="home">
+      <header>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </header>
+      <div class="container">
+        <span class="text first-text">Fery Kusuma</span>
+        <span class="text first-text"><br /></span>
+        <span class="text sec-text">PC Builder Enthusiast</span>
+        <span><p>Hi everyone , welcome to my portfolio</p></span>
+      </div>
+      <div class="gambar">
+        <img src="assets/introwork.png" />
+      </div>
+      <script>
+        const text = document.querySelector(".sec-text");
+
+        const textLoad = () => {
+          setTimeout(() => {
+            text.textContent = "PC Builder Enthusiast";
+          }, 0);
+          setTimeout(() => {
+            text.textContent = "Computer Technician";
+          }, 4000);
+          setTimeout(() => {
+            text.textContent = "Trader & Stock Investor";
+          }, 8000); //1s = 1000 milliseconds
+        };
+        textLoad();
+        setInterval(textLoad, 12000);
+      </script>
+      <div class="footer">
+        <p>Copyleft 2022 by Fery Kusuma</p>
+      </div>
+    </section>
+  </body>
+</html>
